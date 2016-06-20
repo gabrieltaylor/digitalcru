@@ -7,6 +7,7 @@ defmodule Cru.Slide do
     field :body, :string
     field :link_text, :string
     field :link_url, :string
+    embeds_one :style, Cru.SlideStyle
 
     timestamps
   end
@@ -18,5 +19,6 @@ defmodule Cru.Slide do
     struct
     |> cast(params, [:title, :sub_title, :body, :link_text, :link_url])
     |> validate_required([:title, :sub_title, :body, :link_text, :link_url])
+    # |> cast_embed(:style, required: true)
   end
 end

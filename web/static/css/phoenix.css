@@ -1,0 +1,6 @@
+.alert:empty { display: none; }
+.slides{
+  min-height: 400px;
+  background-color: #ccc;
+  
+}

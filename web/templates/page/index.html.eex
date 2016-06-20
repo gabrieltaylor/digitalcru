@@ -1,3 +1,16 @@
-<div class="container">
-  <h1>Index</h1>
+<div class="slides">
+
+  <%= for slide <- @slides do %>
+    <div class="slide slide-<%= slide.id %>" style="background_color: ">
+      <div class="container">
+        <h1><%= slide.title %></h1>
+        <h3><%= slide.sub_title %></h3>
+        <p><%= slide.body %></p>
+        <p> <%= link slide.link_text, to: slide.link_url, class: "btn btn-primary" %> </p>
+
+        <%= #inspect slide.style %>
+      </div>
+    </div>
+  <% end %>
+
 </div>

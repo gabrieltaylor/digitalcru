@@ -5,6 +5,7 @@
   </p>
   <h3><%= @slide.sub_title %></h3>
   <p><%= @slide.body %></p>
+  <p><%= inspect @slide.style.background_color %></p>
   <p>
     <%= link @slide.link_text, to: @slide.link_url %>
   </p>
