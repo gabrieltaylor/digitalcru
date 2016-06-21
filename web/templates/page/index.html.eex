@@ -45,7 +45,7 @@
       <%= for testimonial <- @testimonials do %>
         <div class="testimonial testimonial-<%= testimonial.id %>">
           <div class="col-xs-12">
-            <p><%= testimonial.body %></p>
+            <p style="background-color: rgba(0,0,0, 0.4); color: rgba(255,255,255,0.6); padding: 30px; border-radius: 5px"><%= testimonial.body %></p>
             <h4><%= testimonial.full_name %></h4>
             <p><%= testimonial.designation %>, <%= testimonial.company %></p>
           </div>
