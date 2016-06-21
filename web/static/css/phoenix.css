@@ -20,3 +20,9 @@
   box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
   transform: scale(1.025)
 }
+
+.service_header{
+  min-height: 200px;
+  padding: 150px 0;
+  color: #fff;
+}

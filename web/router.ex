@@ -17,6 +17,7 @@ defmodule Cru.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/services", ServiceController, only: [:show]
   end
 
   scope "/admin", Cru.Admin, as: :admin do
