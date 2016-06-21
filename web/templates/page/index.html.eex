@@ -38,3 +38,19 @@
     </div>
   </div>
 </div>
+<!-- Services End -->
+<div class="testimonials_warapper">
+  <div class="container">
+    <div class="testimonials">
+      <%= for testimonial <- @testimonials do %>
+        <div class="testimonial testimonial-<%= testimonial.id %>">
+          <div class="col-xs-12">
+            <p><%= testimonial.body %></p>
+            <h4><%= testimonial.full_name %></h4>
+            <p><%= testimonial.designation %>, <%= testimonial.company %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

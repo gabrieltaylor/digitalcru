@@ -28,4 +28,14 @@ $(document).ready(function(){
     pauseOnHover: false
 
   });
+  $('.testimonials').slick({
+    autoplay: true,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 3
+
+  });
 });
