@@ -5,6 +5,7 @@ defmodule Cru.Service do
     field :icon, :string
     field :title, :string
     field :body, :string
+    embeds_one :style, Cru.ServiceStyle
 
     timestamps
   end
@@ -16,5 +17,6 @@ defmodule Cru.Service do
     struct
     |> cast(params, [:icon, :title, :body])
     |> validate_required([:icon, :title, :body])
+    |> cast_embed(:style)
   end
 end
