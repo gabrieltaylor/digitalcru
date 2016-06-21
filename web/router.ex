@@ -26,6 +26,7 @@ defmodule Cru.Router do
     get "/dashboard", DashboardController, :index
     resources "/slides", SlideController
     resources "/services", ServiceController
+    resources "/testimonials", TestimonialController
   end
 
   # Other scopes may use custom stacks.
