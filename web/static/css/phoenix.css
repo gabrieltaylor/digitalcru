@@ -1,6 +1,6 @@
 .alert:empty { display: none; }
-.slides{
+.slide{
   min-height: 400px;
   background-color: #ccc;
-  
+  padding: 100px;
 }

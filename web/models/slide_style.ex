@@ -2,7 +2,7 @@ defmodule Cru.SlideStyle do
   use Cru.Web, :model
 
   @primary_key {:id, :binary_id, autogenerate: true}
-  schema "" do
+  embedded_schema do
     field :background_color, :string, default: "#ccc"
   end
 

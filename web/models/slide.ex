@@ -19,6 +19,6 @@ defmodule Cru.Slide do
     struct
     |> cast(params, [:title, :sub_title, :body, :link_text, :link_url])
     |> validate_required([:title, :sub_title, :body, :link_text, :link_url])
-    # |> cast_embed(:style, required: true)
+    |> cast_embed(:style)
   end
 end

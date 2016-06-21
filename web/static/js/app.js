@@ -22,6 +22,7 @@ import "phoenix_html"
 
 $(document).ready(function(){
   $('.slides').slick({
-    
+    autoplay: true
+
   });
 });
