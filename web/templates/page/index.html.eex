@@ -1,5 +1,4 @@
 <div class="slides">
-
   <%= for slide <- @slides do %>
     <div class="slide slide-<%= slide.id %>" style="color: #fff; background-color: <%= slide.style.background_color %>">
       <div class="container">
@@ -7,10 +6,25 @@
         <h3><%= slide.sub_title %></h3>
         <p><%= slide.body %></p>
         <p> <%= link slide.link_text, to: slide.link_url, class: "btn btn-primary" %> </p>
-
-        <%= #inspect slide.style %>
       </div>
     </div>
   <% end %>
+</div>
+<!-- Slides End -->
+<div class="services">
+  <div class="container">
+    <div class="row">
+      <%= for service <- @services do %>
 
+        <div class="col-xs-3">
+          <div class="service" style="border-top: <%= #service.style.border_top %>">
+            <p><%= service.icon %></p>
+            <h3><%= service.title %></h3>
+            <p><%= service.body %></p>
+          </div>
+        </div>
+
+        <% end %>
+    </div>
+  </div>
 </div>

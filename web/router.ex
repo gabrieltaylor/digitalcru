@@ -21,9 +21,10 @@ defmodule Cru.Router do
 
   scope "/admin", Cru.Admin, as: :admin do
     pipe_through :browser
-    
+
     get "/dashboard", DashboardController, :index
     resources "/slides", SlideController
+    resources "/services", ServiceController
   end
 
   # Other scopes may use custom stacks.

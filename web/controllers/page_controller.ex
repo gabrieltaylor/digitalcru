@@ -4,6 +4,7 @@ defmodule Cru.PageController do
 
   def index(conn, _params) do
     slides = Repo.all(Cru.Slide)
-    render conn, "index.html", slides: slides
+    services = Repo.all(Cru.Service)
+    render conn, "index.html", slides: slides, services: services
   end
 end

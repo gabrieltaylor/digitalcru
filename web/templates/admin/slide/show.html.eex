@@ -9,4 +9,8 @@
   <p>
     <%= link @slide.link_text, to: @slide.link_url %>
   </p>
+
+  <p>
+    <%= link "Back", to: admin_slide_path(@conn, :index) %>
+  </p>
 </div>
