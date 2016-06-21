@@ -22,7 +22,10 @@ import "phoenix_html"
 
 $(document).ready(function(){
   $('.slides').slick({
-    autoplay: true
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 2000,
+    pauseOnHover: false
 
   });
 });
