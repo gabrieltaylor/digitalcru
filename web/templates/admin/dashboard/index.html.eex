@@ -12,7 +12,7 @@
       <%= link "Testimonials", to: admin_testimonial_path(@conn, :index), class: "nav-link" %>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
+      <%= link "Products", to: admin_product_path(@conn, :index), class: "nav-link" %>
     </li>
   </ul>
 
