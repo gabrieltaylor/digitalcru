@@ -7,6 +7,8 @@ A simple CMS for portfolio websites. It has following features.
   * Can add `Services`
   * Can add client's `Testimonials`
   * Can add `Products`
+  * Can add `Clients`
+  * Can add `Articles` for blog
 
 It includes following libraries.
 
