@@ -1,4 +1,4 @@
-# Cru
+# DigitalCru
 
 A simple CMS for portfolio websites. It has following features.
 
