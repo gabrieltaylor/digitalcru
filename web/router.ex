@@ -28,6 +28,8 @@ defmodule Cru.Router do
     resources "/services", ServiceController
     resources "/testimonials", TestimonialController
     resources "/products", ProductController
+    resources "/clients", ClientController
+    resources "/articles", ArticleController
   end
 
   # Other scopes may use custom stacks.
