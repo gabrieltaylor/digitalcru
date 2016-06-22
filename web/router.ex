@@ -30,6 +30,7 @@ defmodule Cru.Router do
     resources "/products", ProductController
     resources "/clients", ClientController
     resources "/articles", ArticleController
+    resources "/messages", MessageController, only: [:index, :show, :delete]
   end
 
   # Other scopes may use custom stacks.
