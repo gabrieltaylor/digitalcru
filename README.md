@@ -9,6 +9,7 @@ A simple CMS for portfolio websites. It has following features.
   * Can add `Products`
   * Can add `Clients`
   * Can add `Articles` for blog
+  * Can see & reply in-app contact `Messages`
 
 It includes following libraries.
 
