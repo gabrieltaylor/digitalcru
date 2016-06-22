@@ -5,6 +5,7 @@ defmodule Cru.Product do
     field :icon, :string
     field :title, :string
     field :body, :string
+    embeds_many :features, Cru.ProductFeature
 
     timestamps
   end
@@ -16,5 +17,6 @@ defmodule Cru.Product do
     struct
     |> cast(params, [:icon, :title, :body])
     |> validate_required([:icon, :title, :body])
+    |> cast_embed(:features)
   end
 end
