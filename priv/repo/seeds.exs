@@ -14,6 +14,9 @@ alias Cru.Repo
 alias Cru.Slide
 alias Cru.Service
 alias Cru.Testimonial
+alias Cru.Product
+alias Cru.Client
+alias Cru.Article
 
 body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corporis placeat soluta nulla. Tenetur aperiam distinctio rem accusamus beatae, temporibus? Incidunt earum minus, sapiente vero pariatur dolores velit enim obcaecati."
 colors = %{
@@ -42,4 +45,19 @@ end)
 Enum.map(0..9, fn x ->
   testimonial = Repo.insert!(%Testimonial{full_name: "Syed Murtza #{x}", designation: "CEO", company: "Company #{x}", body: body})
   IO.puts testimonial.full_name
+end)
+
+Enum.map(0..9, fn x ->
+  product = Repo.insert!(%Product{icon: "bank", title: "Product #{x}", body: body})
+  IO.puts product.title
+end)
+
+Enum.map(0..9, fn x ->
+  client = Repo.insert!(%Client{logo: "path/to/logo#{x}.jpg", name: "Client #{x}", body: body})
+  IO.puts client.name
+end)
+
+Enum.map(0..9, fn x ->
+  article = Repo.insert!(%Article{title: "Article #{x}", body: body <> body})
+  IO.puts article.title
 end)
