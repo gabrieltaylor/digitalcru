@@ -15,7 +15,7 @@
     <tbody>
       <%= for article <- @articles do %>
         <tr>
-          <td><%= article.name %></td>
+          <td><%= article.title %></td>
           <td><%= article.body %></td>
 
           <td> <%= link "Show", to: admin_article_path(@conn, :show, article) %> </td>

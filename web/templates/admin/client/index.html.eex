@@ -16,7 +16,7 @@
     <tbody>
       <%= for client <- @clients do %>
         <tr>
-          <td><%= client.icon %></td>
+          <td><%= client.logo %></td>
           <td><%= client.name %></td>
           <td><%= client.body %></td>
 
